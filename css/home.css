@@ -1,4 +1,8 @@
 /* CSS para a página home */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 
 /* Estilo para o corpo da página */
 body {
@@ -6,139 +10,280 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
-    }
-    
-    /* Estilo para o cabeçalho da página */
-    .titulo {
+}
+
+/* Estilo para o cabeçalho da página */
+.titulo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    }
-    
-    .titulo a {
+    padding: 20px;
+    background-color: #252525;
+    font-size: 1.2rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.links a {
     text-decoration: none;
     color: #fff;
-    margin-right: 10px;
-    }
-    
-    /* Estilo para as linguas */
-    .linguas {
+    margin-right: 20px;
+}
+
+.linguas {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 200px;
-    }
-    
-    .linguas p {
-    font-size: 14px;
-    margin: 0;
-    padding: 5px;
-    cursor: pointer;
-    }
-    
-    /* Estilo para a seção Home */
-    .Home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    }
-    
-    .Home h1 {
-    font-size: 48px;
-    margin: 0;
-    text-align: center;
-    }
-    
-    .Home h2 {
-    font-size: 36px;
-    margin: 0;
-    margin-top: 50px;
-    text-align: center;
-    }
-    
-    .Home p {
-    font-size: 18px;
-    margin-top: 20px;
-    text-align: center;
-    line-height: 1.5;
-    }
-    
-    /* Estilo para a seção Projetos */
-    .projetos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    background-color: #252525;
-    }
-    
-    .projetos h2 {
-    font-size: 36px;
-    margin: 0;
-    text-align: center;
-    color: #fff;
-    }
-    
-    .projetos h3 {
-    font-size: 24px;
-    margin-top: 50px;
-    text-align: center;
-    color: #fff;
-    }
-    
-    .projetos iframe {
-    width: 50%;
-    height: 500px;
-    margin-top: 20px;
-    }
+    width: 25%;
+}
 
-    .projetos p{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        color: #fff;
+.linguas a {
+    margin: 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.linguas img {
+    margin-left: 5px;
+    height: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .links {
+      width: 100%;
     }
     
-    /* Estilo para a seção Contato */
-    .contato {
-        width: 100%;
-        background-color: #f5f5f5;
-        padding: 50px 0;
-        text-align: center;
-        }
-        
-        .contato h2 {
-        font-size: 2.5rem;
-        margin-bottom: 30px;
-        }
-        
-        .img-contato {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-        
-        .img-contato img {
-        height: 60px;
-        margin: 0 20px;
-        transition: transform 0.3s ease;
-        }
-        
-        .img-contato img:hover {
-        transform: scale(1.2);
-        }
-        
-        @media (max-width: 768px) {
-        .img-contato {
-        flex-wrap: wrap;
-        }
-        .img-contato img {
-        margin: 10px;
-        }
-        }
+    .linguas {
+      width: 50%;
+    }
+  }  
+
+
+/* Estilo para a seção Home */
+.Home {
+    margin: 40px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #555;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.texto-about-me {
+    flex: 1;
+}
+
+.texto-about-me p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.img-eu {
+    flex: 1;
+}
+
+.img-eu img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 800px) {
+    .about {
+      flex-direction: column;
+    }
+    
+    .texto-about-me {
+      margin-top: 40px;
+    }
+    
+    .img-eu {
+      margin-top: 40px;
+    }
+  }  
+
+
+/* Estilo para a seção Projetos */
+.projetos {
+    text-align: center;
+    margin: 50px auto;
+    background-color: #252525;
+}
+
+.projetos h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.projetos h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#texto p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0 30px;
+    max-width: 800px;
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    .projetos iframe {
+      width: 100%;
+      height: 300px;
+    }
+    
+    #video {
+      width: 100%;
+      order: 2;
+    }
+    
+    #texto {
+      width: 100%;
+      order: 1;
+    }
+  }  
+
+
+/* Estilo para o container "contato" */
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+/* Estilo para o título "Contate-me" */
+.contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Estilo para o formulário de contato */
+.gmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 30px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ddd;
+}
+
+/* Estilo para o ícone do Gmail */
+.gmail img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os campos do formulário */
+.gmail h4 {
+    margin-top: 20px;
+}
+
+.gmail input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.gmail input[type="text"]:last-child(1) {
+    height: 200px;
+}
+
+/* Estilo para o botão "Enviar" */
+.gmail input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gmail input[type="button"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Estilo para o título "Ou" */
+.contato h2:nth-of-type(2) {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Estilo para os ícones de contato */
+.img-contato {
+    display: flex;
+    justify-content: center;
+}
+
+.img-contato a {
+    margin: 0 20px;
+}
+
+.img-contato img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.img-contato img:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 800px) {
+    .gmail {
+      width: 100%;
+    }
+  }
+  
