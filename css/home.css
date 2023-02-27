@@ -177,12 +177,12 @@ h2 {
     
     #video {
       width: 100%;
-      order: 2;
+      order: 1;
     }
     
     #texto {
       width: 100%;
-      order: 1;
+      order: 2;
     }
   }  
 
@@ -233,8 +233,12 @@ h2 {
     border: 1px solid #ccc;
 }
 
-.gmail input[type="text"]:last-child(1) {
-    height: 200px;
+.gmail textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 /* Estilo para o botão "Enviar" */
