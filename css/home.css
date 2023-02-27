@@ -56,13 +56,27 @@ body {
 
 @media screen and (max-width: 800px) {
     .links {
-      width: 100%;
+        width: 100%;
     }
-    
+
     .linguas {
-      width: 50%;
+        width: 50%;
     }
-  }  
+}
+
+@media screen and (max-width: 450px) {
+    .titulo{
+        display: block;
+    }
+
+    .links {
+        width: 50%;
+    }
+
+    .linguas {
+        width: 25%;
+    }
+}
 
 
 /* Estilo para a seção Home */
@@ -120,17 +134,17 @@ h2 {
 
 @media screen and (max-width: 800px) {
     .about {
-      flex-direction: column;
+        flex-direction: column;
     }
-    
+
     .texto-about-me {
-      margin-top: 40px;
+        margin-top: 40px;
     }
-    
+
     .img-eu {
-      margin-top: 40px;
+        margin-top: 40px;
     }
-  }  
+}
 
 
 /* Estilo para a seção Projetos */
@@ -169,22 +183,113 @@ h2 {
     color: #fff;
 }
 
+/* estilo para a div de código */
+.codigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* estilo para o título que abre o modal */
+  .abrir-modal {
+    cursor: pointer;
+  }
+  
+  /* estilo para a div do modal */
+  .modal-codigo {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* estilo para o conteúdo do modal */
+  .modal-conteudo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 300px;
+    max-height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* estilo para a imagem dos links */
+  .modal-conteudo img {
+    width: 100%;
+    max-width: 100px;
+    margin: 1px 0;
+  }
+  
+  /* estilo para o botão de fechar */
+  .modal-conteudo button {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-conteudo button:hover {
+    background-color: #3e8e41;
+}
+  
+  /* estilo para mostrar o modal quando aberto */
+  .modal-codigo.mostrar {
+    display: block;
+  }
+
+/* Estilo do botão de abertura do modal */
+.abrir-modal {
+    cursor: pointer;
+}
+
+/* Exibição do modal quando estiver aberto */
+.modal-codigo.aberto {
+    display: flex;
+}
+
+.link {
+    display: flex;
+    align-items: center; 
+  }
+
+  .modal-conteudo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+  }
+
+  
+
+
 @media screen and (max-width: 800px) {
     .projetos iframe {
-      width: 100%;
-      height: 300px;
+        width: 100%;
+        height: 300px;
     }
-    
+
     #video {
-      width: 100%;
-      order: 1;
+        width: 100%;
+        order: 1;
     }
-    
+
     #texto {
-      width: 100%;
-      order: 2;
+        width: 100%;
+        order: 2;
     }
-  }  
+}
 
 
 /* Estilo para o container "contato" */
@@ -238,6 +343,10 @@ h2 {
     height: 150px;
 }
 
+.gmail input[name="mensagem"]::placeholder {
+    text-align: start;
+}
+
 .gmail button[type="submit"] {
     width: 100%;
     padding: 10px 20px;
@@ -285,7 +394,6 @@ h2 {
 
 @media screen and (max-width: 800px) {
     .gmail {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
+}
