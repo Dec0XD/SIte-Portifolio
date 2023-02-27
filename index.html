@@ -122,15 +122,21 @@
         <h2>Contate-me</h2>
         <div class="gmail">
             <a><img src="img/Logo_Gmail_(2015-2020).svg.png" alt=""></a>
-            <h4>Seu nome:</h4>
-            <input type="text">
-            <h4>Seu email:</h4>
-            <input type="text">
-            <h4>Sua mensagem:</h4>
-            <textarea class="/" cols = "35" rows = "8"></textarea>
+            <form action="https://formsubmit.co/andrelucascoelho281@gmail.com" method="POST">
+                <h4>Seu nome:</h4>
+                <input type="text" name="name" placeholder="Digite o seu nome" required>
+                <h4>Seu email:</h4>
+                <input type="email" name="email" placeholder="Escreva seu E-mail" required>
+                <h4>Sua mensagem:</h4>
+                <input type="text" name="mensagem" placeholder="Escreva a sua mensagem" required>
 
-            <input type="button" value="Enviar">
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="_subject" value="Novo contato (Site Portifolio)!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
         </div>
+        </form>
         <h2>Ou</h2>
         <div class="img-contato">
             <a href="https://github.com/Dec0XD"><img src="img/GitHub-Mark.png" alt=""></a>
