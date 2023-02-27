@@ -1,0 +1,144 @@
+/* CSS para a página home */
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    }
+    
+    /* Estilo para o cabeçalho da página */
+    .titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    }
+    
+    .titulo a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    }
+    
+    /* Estilo para as linguas */
+    .linguas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    }
+    
+    .linguas p {
+    font-size: 14px;
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+    }
+    
+    /* Estilo para a seção Home */
+    .Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    }
+    
+    .Home h1 {
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+    }
+    
+    .Home h2 {
+    font-size: 36px;
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+    }
+    
+    .Home p {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+    }
+    
+    /* Estilo para a seção Projetos */
+    .projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #252525;
+    }
+    
+    .projetos h2 {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    }
+    
+    .projetos h3 {
+    font-size: 24px;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    }
+    
+    .projetos iframe {
+    width: 50%;
+    height: 500px;
+    margin-top: 20px;
+    }
+
+    .projetos p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+    }
+    
+    /* Estilo para a seção Contato */
+    .contato {
+        width: 100%;
+        background-color: #f5f5f5;
+        padding: 50px 0;
+        text-align: center;
+        }
+        
+        .contato h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        }
+        
+        .img-contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        .img-contato img {
+        height: 60px;
+        margin: 0 20px;
+        transition: transform 0.3s ease;
+        }
+        
+        .img-contato img:hover {
+        transform: scale(1.2);
+        }
+        
+        @media (max-width: 768px) {
+        .img-contato {
+        flex-wrap: wrap;
+        }
+        .img-contato img {
+        margin: 10px;
+        }
+        }
