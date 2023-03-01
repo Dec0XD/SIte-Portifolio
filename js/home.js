@@ -30,7 +30,7 @@ function changeLanguage(lang) {
   }
 }
 
-// defina as traduções
+//traduções
 var translations = {
   "pt": {
     "sobre-mim": "Sobre mim",
@@ -50,7 +50,13 @@ var translations = {
     "project-links-1": "Links Do Projeto",
     "project-code-link-1": "Código",
     "project-site-link-1": "Site",
-    "project-close-link-1": "Fechar"
+    "project-close-link-1": "Fechar",
+    "contate": "Contate-me",
+    "nome": "Seu nome *",
+    "email": "Seu email *",
+    "mensagem": "Sua mensagem *",
+    "enviar": "Enviar",
+    "ou": "Ou",
   },
   "en": {
     "sobre-mim": "About Me",
@@ -70,6 +76,38 @@ var translations = {
     "project-links-1": "Project Links",
     "project-code-link-1": "Code",
     "project-site-link-1": "Site",
-    "project-close-link-1": "Close"
+    "project-close-link-1": "Close",
+    "contate": "Contact me",
+    "nome": "Your name *",
+    "email": "Your email *",
+    "mensagem": "Your message *",
+    "enviar": "Send",
+    "ou": "Or",
+  },
+  "es": {
+    "sobre-mim": "Sobre mí",
+    "projetos": "Proyectos",
+    "contato": "Contacto",
+    "english": "Inglés",
+    "espanol": "Español",
+    "portugues": "Portugués",
+    "hello": "¡Hola! Soy André Coêlho :)",
+    "full-stack": "Desarrollador Full-Stack",
+    "download-cv": "Descargar CV",
+    "contact-me": "Contáctame",
+    "about-me": "Como estudiante de Ciencia de Datos e Inteligencia Artificial y desarrollador Full Stack freelancer, tengo habilidades en diversas tecnologías, incluyendo HTML5, CSS3, JavaScript y Python, así como conocimientos en C# y Django. Poseo experiencia en PySimpleGUI, pandas, numpy y matplot para análisis de datos y actualmente estoy estudiando automatización de procesos en Python usando las herramientas Selenium y PyAutoGUI. Mis trabajos y proyectos están disponibles en mi perfil de GitHub, donde busco constantemente contribuir con la comunidad de desarrolladores y aplicar mis habilidades en nuevos desafíos y proyectos interesantes.",
+    "my-projects": "Mis proyectos realizados y/o en curso",
+    "project-title-1": "Portal del Cálculo - Proyecto Freelancer",
+    "project-description-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo quis mi sagittis, a luctus ante dapibus. Nullam maximus velit vel quam aliquam, id ultricies purus vulputate. Aliquam at elit id nibh lobortis congue eget ac metus. Sed lobortis ex euismod enim faucibus, eget accumsan justo vestibulum. Sed semper leo in turpis blandit lacinia. Vivamus euismod ex sit amet quam tincidunt, at feugiat nulla eleifend. Sed blandit vel nulla a auctor. Donec euismod ultricies magna, a pretium metus bibendum at. Cras porta ipsum in ex congue, vitae pretium elit fringilla. Sed eu leo libero.",
+    "project-links-1": "Enlaces Del Proyecto",
+    "project-code-link-1": "Código",
+    "project-site-link-1": "Sitio",
+    "project-close-link-1": "Cerrar",
+    "contate": "Contáctame",
+    "nome": "Tu nombre *",
+    "email": "Tu correo electrónico *",
+    "mensagem": "Tu mensaje *",
+    "enviar": "Enviar",
+    "ou": "O",
   }
 }
