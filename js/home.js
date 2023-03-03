@@ -41,7 +41,7 @@ var translations = {
     "contact-me": "Entrar em contato",
     "about-me": "Como estudante de Ciência de Dados e Inteligência Artificial e desenvolvedor Full Stack freelancer, tenho habilidades em diversas tecnologias, incluindo HTML5, CSS3, JavaScript e Python, bem como conhecimentos em C# e Django. Possuo experiência em PySimpleGUI, pandas, numpy e matplot para análise de dados e estou atualmente estudando automação de processos em Python usando as ferramentas Selenium e PyAutoGUI. Meus trabalhos e projetos estão disponíveis em meu perfil no GitHub, onde busco constantemente contribuir com a comunidade de desenvolvedores e aplicar minhas habilidades em novos desafios e projetos interessantes.",
     "my-projects": "Meus projetos feitos e/ou em andamento",
-    "project-title-1": "Portal do Cálculo - Projeto Freelancer",
+    "project-title-1": "Portal de Cálculo - Projeto Freelancer",
     "project-description-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo quis mi sagittis, a luctus ante dapibus. Nullam maximus velit vel quam aliquam, id ultricies purus vulputate. Aliquam at elit id nibh lobortis congue eget ac metus. Sed lobortis ex euismod enim faucibus, eget accumsan justo vestibulum. Sed semper leo in turpis blandit lacinia. Vivamus euismod ex sit amet quam tincidunt, at feugiat nulla eleifend. Sed blandit vel nulla a auctor. Donec euismod ultricies magna, a pretium metus bibendum at. Cras porta ipsum in ex congue, vitae pretium elit fringilla. Sed eu leo libero.",
     "project-links-1": "Links Do Projeto",
     "project-code-link-1": "Código",
